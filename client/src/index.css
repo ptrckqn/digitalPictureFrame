@@ -1,0 +1,95 @@
+a{
+  color: white;
+}
+
+body{
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.background{
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* #backgroundImage{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+} */
+
+#backgroundImage{
+  width:100%;
+  height:100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.date{
+  margin-bottom: 0;
+}
+
+.time{
+  margin: 0;
+  text-align: left;
+}
+
+#dateAndTime, #weather{
+  position: absolute;
+  color: white;
+}
+
+#dateAndTime{
+  top: 0;
+  left: 0;
+  padding-left: 1%;
+}
+
+#weather{
+  bottom: 0;
+  right: 0;
+  padding-right: 1%;
+}
+
+.uil-multiply{
+  margin: 0;
+  padding: 0;
+}
+
+.uploadForm{
+  position: fixed;
+  bottom: 0;
+  background: rgba(30, 30, 30, 0.5);
+  color: white;
+  width: 100vw;
+  font-size: 2em;
+  padding-left: 1%;
+  padding-top: 1%;
+}
+
+.uploadForm p{
+  margin-top: 0;
+}
+
+.uploadButton{
+  background: none;
+  border: solid 2px white;
+  color: white;
+  border-radius: 5px;
+  font-size: 3vw;
+}
+
+.uploadButton:hover{
+  cursor: pointer;
+}
