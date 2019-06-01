@@ -2,7 +2,7 @@
 Digital picture frame made with NodeJS, Express, and React
 
 <ul>
-<li>React components consist of the weather information, date, time, and changing background. States used to store image URL on server, time, date, and weather. Props used to pass the image file path from the App.js to the Background.js component</li>
+<li>React components consist of the weather information, date, time, changing background, and image upload form. States used to store image URL on server, time, date, and weather. Props used to pass the image file path from the App.js to the Background.js component</li>
 <li>NodeJS server used to add all the image filenames into an array which is passed onto the react App.js through an axios request. Also handles uploading new images to the proper directory (./client/build/images) using multer.</li>
 </ul>
 
