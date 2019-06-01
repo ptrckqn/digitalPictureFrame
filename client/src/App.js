@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
+import axios from 'axios'
 import DateAndTime from './components/DateAndTime'
 import Background from './components/Background'
 import Weather from './components/Weather'
@@ -22,9 +23,10 @@ class App extends Component{
   }
 
   getImages = async () => {
-    var res = await fetch('/getImage')
-    var data = await res.json()
-    this.setState({ images: data.images })
+    // var res = await fetch('/getImage')
+    // var data = await res.json()
+    var res = await axios('/getImage')
+    this.setState({ images: res.data.images })
   }
 
   randomImage = () =>{

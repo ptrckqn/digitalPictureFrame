@@ -20,7 +20,7 @@ class Weather extends Component{
   getWeather = async () =>{
     var addr = "http://api.openweathermap.org/data/2.5/weather?q=calgary,ca&appid=ca9a701117215b0de595c6ed93372d57"
 
-    var res = await axios.get(addr);
+    var res = await axios(addr);
 
     this.setState({
       temperature: Math.round(res.data.main.temp - 273.15),
@@ -57,7 +57,7 @@ function getIcon(condition){
     case "04n":
       return <i className='uil uil-cloud'></i>
     default:
-      return <i class='uil uil-temperature-half'></i>
+      return <i className='uil uil-temperature-half'></i>
   }
 }
 
