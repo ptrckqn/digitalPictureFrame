@@ -37,18 +37,25 @@ function getIcon(condition){
   switch(condition){
     case "11d":
       return <i className='uil uil-bolt'></i>
+      break;
     case "09d":
       return <i className='uil uil-tear'></i>
+      break;
     case "10d":
       return <i className='uil uil-raindrops'></i>
+      break;
     case "13d":
       return <i className='uil uil-snowflake'></i>
+      break;
     case "50d":
       return <i className='uil uil-water'></i>
+      break;
     case "01d":
       return <i className='uil uil-brightness'></i>
+      break;
     case "01n":
       return <i className='uil uil-moon'></i>
+      break;
     case "02d":
     case "02n":
     case "03d":
@@ -56,8 +63,10 @@ function getIcon(condition){
     case "04d":
     case "04n":
       return <i className='uil uil-cloud'></i>
+      break;
     default:
       return <i className='uil uil-temperature-half'></i>
+      break;
   }
 }
 
