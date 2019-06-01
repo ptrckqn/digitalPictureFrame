@@ -32,7 +32,7 @@ class Weather extends Component{
   }
 
   render(){
-    return <h1 id="weather"><Link to="/api/new">{getIcon(this.state.condition)}</Link>{this.state.temperature}°C</h1>
+    return <h1 id="weather"><Link to="/new">{getIcon(this.state.condition)}</Link>{this.state.temperature}°C</h1>
   }
 }
 

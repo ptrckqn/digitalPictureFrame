@@ -22,7 +22,7 @@ class App extends Component{
   }
 
   getImages = async () => {
-    var res = await fetch('/api/getImage')
+    var res = await fetch('/getImage')
     var data = await res.json()
     this.setState({ images: data.images })
   }
@@ -39,7 +39,7 @@ class App extends Component{
         <DateAndTime />
         <Background image={this.state.imageUrl} />
         <Weather />
-        <Route path="/api/new" component={UploadForm} />
+        <Route path="/new" component={UploadForm} />
       </BrowserRouter>
     </div>
     )
