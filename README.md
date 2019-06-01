@@ -6,7 +6,7 @@ Digital picture frame made with NodeJS, Express, and React
 <li>NodeJS server used to add all the image filenames into an array which is passed onto the react App.js through an axios request. Also handles uploading new images to the proper directory (./client/build/images) using multer.</li>
 </ul>
 
-<a href="https://react-picture-frame.herokuapp.com" target="__blank">View Demo</a>
+<a href="https://react-picture-frame.herokuapp.com">View Demo</a>
 
 Feel free to upload an image to the server for testing purposes by clicking on the weather icon located next to the current temperature (in Calgary, AB). All newly uploaded images are deleted every few days as Heroku refreshes the repository.
 
