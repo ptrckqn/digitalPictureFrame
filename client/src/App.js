@@ -11,7 +11,7 @@ class App extends Component{
     super()
     this.state = {
       images: [],
-      imageUrl: "url(images/first.jpg)"
+      imageUrl: "url(../../images/first.jpg)"
      }
   }
 

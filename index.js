@@ -44,7 +44,7 @@ if(process.env.NODE_ENV === 'production'){
   })
 }
 
-app.use('/api', router)
+app.use('/', router)
 
 
 const PORT = process.env.PORT || 5000;
