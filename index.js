@@ -19,7 +19,7 @@ router.get('/getImage', (req, res) => {
   fs.readdir('./client/build/images', (err, files) => {
     files.forEach(file => {
       var fileType = file.slice(-3)
-      if ((fileType === "jpg") || (fileType === "JPG")){
+      if ((fileType === "jpg") || (fileType === "JPG"){
         images.push(file)
       }
     });
