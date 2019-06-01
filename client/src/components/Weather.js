@@ -60,7 +60,7 @@ function getIcon(condition){
     case "04n":
       return <i className='uil uil-cloud'></i>
     default:
-      return
+      return <i class='uil uil-temperature-half'></i>
   }
 }
 
