@@ -45,4 +45,9 @@ if(process.env.NODE_ENV === 'production'){
 }
 
 app.use('/api', router)
-app.listen(3001, () => { console.log('App listenting on port 3001')});
+
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Our app is running on port ${ PORT }`);
+});
