@@ -18,7 +18,7 @@ class Weather extends Component{
   }
 
   getWeather = async () =>{
-    var addr = "http://api.openweathermap.org/data/2.5/weather?q=calgary,ca&appid=ca9a701117215b0de595c6ed93372d57"
+    var addr = "https://api.openweathermap.org/data/2.5/weather?q=calgary,ca&appid=ca9a701117215b0de595c6ed93372d57"
 
     var res = await axios(addr);
 
