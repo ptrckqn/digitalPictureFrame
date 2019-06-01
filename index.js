@@ -29,8 +29,20 @@ router.get('/getImage', (req, res) => {
 
 //Upload a new image to the /images directory
 router.post('/', upload.single('uploadedImage'), (req, res) => {
-  res.redirect('http://localhost:3000')
+  res.redirect('/')
 })
+
+//Production routing when hosted on Heroku
+if(process.env.NODE_ENV === 'production'){
+  //Serving production assets such as main.js and main.css
+  app.use(express.static('client/build'))
+
+  //Serving up index.html if a route is not recognized
+  const path = require('path')
+  app.get('*', (req, res) =>{
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  })
+}
 
 app.use('/api', router)
 app.listen(3001, () => { console.log('App listenting on port 3001')});

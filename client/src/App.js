@@ -18,7 +18,7 @@ class App extends Component{
   componentDidMount(){
     this.getImages()
     //Background image updates every 10 minutes
-    this.intervalID = setInterval( () => this.randomImage(), 600000)
+    this.intervalID = setInterval( () => this.randomImage(), 2000)
   }
 
   getImages = async () => {
