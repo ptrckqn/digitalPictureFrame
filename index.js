@@ -32,7 +32,7 @@ app.post('/', upload.single('uploadedImage'), (req, res) => {
 })
 
 //Production routing when hosted on Heroku
-// if(process.env.NODE_ENV === 'production'){
+if(process.env.NODE_ENV === 'production'){
   //Serving production assets such as main.js and main.css
   app.use(express.static('client/build'))
 
@@ -41,7 +41,7 @@ app.post('/', upload.single('uploadedImage'), (req, res) => {
   app.get('*', (req, res) =>{
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
   })
-// }
+}
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
