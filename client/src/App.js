@@ -29,7 +29,7 @@ class App extends Component{
 
   randomImage = () =>{
     var i = Math.floor(Math.random() * this.state.images.length)
-    this.setState({ imageUrl:"url(images/" + this.state.images[i] + ")" })
+    this.setState({ imageUrl:"url(../../images/" + this.state.images[i] + ")" })
   }
 
   render(){

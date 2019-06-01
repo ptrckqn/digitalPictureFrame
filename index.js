@@ -5,7 +5,7 @@ fs          = require('fs'),
 multer      = require('multer'),
 storage     = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "../client/public/images")
+    cb(null, "./client/build/images")
   },
   filename: (req, file, cb) => {
     cb(null, Date.now() + ".jpg")
@@ -16,7 +16,7 @@ upload      = multer({ storage: storage })
 //Get the names of all the images in the /images directory
 router.get('/getImage', (req, res) => {
   var images = []
-  fs.readdir('../client/public/images', (err, files) => {
+  fs.readdir('./client/build/images', (err, files) => {
     files.forEach(file => {
       var fileType = file.slice(-3)
       if ((fileType === "jpg") || (fileType === "JPG")){
