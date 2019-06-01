@@ -23,8 +23,6 @@ class App extends Component{
   }
 
   getImages = async () => {
-    // var res = await fetch('/getImage')
-    // var data = await res.json()
     var res = await axios('/getImage')
     this.setState({ images: res.data.images })
   }

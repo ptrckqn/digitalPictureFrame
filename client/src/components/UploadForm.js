@@ -7,7 +7,7 @@ class UploadForm extends Component{
       <div className="uploadForm">
         <Link to='/'><i className='uil uil-multiply'></i></Link>
         <p>
-          <form enctype="multipart/form-data" className="center" action="http://localhost:3001/api" method="post">
+          <form enctype="multipart/form-data" className="center" action="/" method="post">
             <input className="" type="file" name="uploadedImage" accept="image/jpeg" required></input>
               <div>
                 <button type="submit" className="uploadButton">Upload</button>
